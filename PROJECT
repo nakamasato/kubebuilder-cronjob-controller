@@ -3,4 +3,14 @@ layout:
 - go.kubebuilder.io/v3
 projectName: kubebuilder-cronjob-controller
 repo: example.com/m/v2
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: tutorial.kubebuilder.io
+  group: batch
+  kind: CronJob
+  path: example.com/m/v2/api/v1
+  version: v1
 version: "3"
