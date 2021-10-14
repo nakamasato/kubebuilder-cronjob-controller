@@ -1,0 +1,6 @@
+domain: tutorial.kubebuilder.io
+layout:
+- go.kubebuilder.io/v3
+projectName: kubebuilder-cronjob-controller
+repo: example.com/m/v2
+version: "3"
