@@ -3,5 +3,20 @@ kind: CronJob
 metadata:
   name: cronjob-sample
 spec:
-  # Add fields here
-  foo: bar
+  schedule: "@hourly"
+  startingDeadlineSeconds: 300
+  concurrencyPolicy: Allow
+  suspend: false
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+            - name: busybox
+              image: busybox
+              command:
+                - /bin/sh
+                - -c
+                - date; echo Hello from the Kubernetes cluster
+  successfulJobsHistoryLimit: 1
+  failedJobsHistoryLimit: 1
