@@ -92,6 +92,10 @@ func main() {
 			setupLog.Error(err, "unable to create webhook", "webhook", "CronJob")
 			os.Exit(1)
 		}
+		if err = (&batchv2.CronJob{}).SetupWebhookWithManager(mgr); err != nil {
+			setupLog.Error(err, "unable to create webhook", "webhook", "CronJob")
+			os.Exit(1)
+		}
 	}
 	//+kubebuilder:scaffold:builder
 
