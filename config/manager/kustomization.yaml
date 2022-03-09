@@ -13,4 +13,3 @@ kind: Kustomization
 images:
 - name: controller
   newName: kubebuilder-cronjob-controller
-  newTag: latest
