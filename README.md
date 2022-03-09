@@ -19,8 +19,8 @@ go version go1.17.3 darwin/amd64
 
 ## Contents
 
-1. [Building CronJob](docs/building-cronjob.md)
-1. [Multi-Version API]
+1. [Building CronJob](01-building-cronjob.md)
+1. [Multi-Version API](02-multi-version-api.md)
 1. [ComponentConfig]
 1. [Migrations]
 1. [Reference]
