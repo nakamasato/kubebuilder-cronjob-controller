@@ -21,7 +21,7 @@ go version go1.17.3 darwin/amd64
 
 1. [Building CronJob](01-building-cronjob.md)
 1. [Multi-Version API](02-multi-version-api.md)
-1. [ComponentConfig]
-1. [Migrations]
-1. [Reference]
-1. [Plugins]
+1. [ComponentConfig](03-component-config.md)
+1. [Migrations (TODO)](https://book.kubebuilder.io/migrations.html)
+1. [Reference](05-reference.md)
+1. [Plugins (TODO)](https://book.kubebuilder.io/plugins/plugins.html)
